@@ -1,4 +1,4 @@
-num = (int(input("Enter the multiplication value in number= ")))
+num = 17
 iterations = 1
 while iterations <= 10:
     mul = num * iterations
