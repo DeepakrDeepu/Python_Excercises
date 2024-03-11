@@ -1,3 +1,2 @@
-a = 'Hello'
-b = input("Type your name: ")
-print(a, b)
+Name = input("Type your name: ")
+print("Hello", Name, "!!!")
