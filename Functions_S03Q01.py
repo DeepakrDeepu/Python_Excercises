@@ -1,15 +1,15 @@
-num1 = int(input("Enter the first number: "))
-if 10 <= num1 <= 99:
-    print("Entered number is 2-digit number")
-elif 100 <= num1 <= 999:
-    print("Entered number is 3-digit number")
-else:
-    print(num1)
-    
-num2 = int(input("Enter the second number: "))
-if 10 <= num2 <= 99:
-    print("Entered number is 2-digit number")
-elif 100 <= num2 <= 999:
-    print("Entered number is 3-digit number")
-else:
-    print(num2)
+def perform_check(number):
+    if 10 <= number <= 99:
+        print("Entered number",number,"is a 2-Digit number")
+    elif 100 <= number <= 999:
+        print("Entered number",number,"is a 3-Digit number")
+    else:
+        print("Entered number:",number)
+
+def get_number():   
+    return int(input("Enter the numbers = "))
+
+num1 = get_number()
+num2 = get_number()
+perform_check(num1)
+perform_check(num2)
