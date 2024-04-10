@@ -7,14 +7,16 @@ def Percentage(score):
         print("Just Pass")
     else: 
         print("Failed in exam")
+        
+def get_number(subject):
+    return float(input(f"Enter the marks obtained in {subject} subject: "))
 
-# Get marks obtained in English, Science, and Mathematics from the user
-English = float(input("Enter the marks obtained in English subject: "))
-Science = float(input("Enter the marks obtained in Science subject: "))
-Maths = float(input("Enter the marks obtained in Mathematics subject: "))
+English = get_number("English")
+Science = get_number("Science")
+Maths = get_number("Maths")
 
 Total_Marks_Obtained = English + Science + Maths
-Total_Possible_Marks = 80 + 90 + 100
-Percentage_Marks = (Total_Marks_Obtained / Total_Possible_Marks) * 100
+Total_Maximum_Marks = 80 + 90 + 100
+Percentage_Marks = (Total_Marks_Obtained / Total_Maximum_Marks) * 100
 
 Percentage(Percentage_Marks)
