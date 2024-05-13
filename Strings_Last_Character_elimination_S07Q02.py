@@ -1,5 +1,5 @@
 fname = input("First name: ")
 lname = input("Last name: ")
 fn = fname + ' ' + lname
-eliminate = fname[0:6] + ' ' + lname[0:1]
+eliminate = fname[:-4] + ' ' + lname[:-4]
 print(eliminate)
