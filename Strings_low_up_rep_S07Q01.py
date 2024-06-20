@@ -1,0 +1,6 @@
+fname = input("Enter your first name:")
+lname = input("Enter your last name:")
+print("Name:",fname.lower(),",","Sur Name:",lname.lower())
+print(fname.upper(),lname.upper())
+print("------ ----")
+print(fname.replace(fname,lname) + ',' + lname.replace(lname,fname))
