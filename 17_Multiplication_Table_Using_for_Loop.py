@@ -1,7 +1,5 @@
-num = 17
-for i in range(1,11):
-    Multiplied_Value = num * i
-    print(num,'*',i, '=', Multiplied_Value)
-    
-
-
+num = int(input("Enter the number to print multiplication number: "))
+i = 1
+while i <= 10:
+    print(num,'*',i, '=', num*i)
+    i+=1
